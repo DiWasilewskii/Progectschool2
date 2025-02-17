@@ -1,4 +1,4 @@
-/* Computer version */
+/* version */
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -184,4 +184,32 @@
   }
 
 
-  /* Mobile version */
+  /* pc version */
+
+  @media screen and (min-width: 1158px) {
+    .section {
+      padding: 120px 0;
+    }
+  
+    .container {
+      max-width: 1158px;
+      padding: 0 15px;
+    }
+  
+    .logo {
+      margin-right: 76px;
+    }
+  
+    .header-address {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+  
+    .contacts {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  
+ 
