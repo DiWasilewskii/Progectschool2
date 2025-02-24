@@ -3,14 +3,17 @@ header {
   display: block;
   unicode-bidi: isolate;
 }
+
 .container {
   margin: 0 auto;
   max-width: 320px;
   padding: 0 16px;
 }
+
 .header-menu {
   display: none;
 }
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   
@@ -25,8 +28,6 @@ header {
     display: flex;
     align-items: center;
   }
-  
-
   
   .logo {
     font-family: "Raleway", sans-serif;
@@ -129,10 +130,7 @@ header {
       box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
-    .header-menu {
-      display: flex;
-      gap: 40px;
-    }
+  
     .open-menu-btn {
       display: none;
     }
@@ -228,7 +226,7 @@ header {
     }
   }
   
-  .visually-hidden {
+  /* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -240,7 +238,7 @@ header {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+  } */
   
   .sec-title {
     font-weight: 500;
