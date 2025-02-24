@@ -1,9 +1,19 @@
-/* version */
-
+/* version mobile */
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+.container {
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0 16px;
+}
+.header-menu {
+  display: none;
+}
 .page-header {
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc;
+  
   }
   
   .page-header .container {
@@ -16,10 +26,7 @@
     align-items: center;
   }
   
-  .header-menu {
-    display: flex;
-    gap: 40px;
-  }
+
   
   .logo {
     font-family: "Raleway", sans-serif;
@@ -55,12 +62,9 @@
     color: #404bbf;
   }
   
+
   .address {
-    color: #2e2f42;
-    text-decoration: none;
-    margin-left: auto;
-    font-style: normal;
-  }
+   display: none;}
   
   .links {
     display: block;
@@ -105,6 +109,12 @@
     color: #404bbf;
   }
 
+  .open-menu-btn {
+    padding: 0;
+    line-height: 0;
+    /* background-color: transparent; */
+    border: none;
+    cursor: pointer;}
 
 
   /* Tablet version */
@@ -113,15 +123,20 @@
     .container {
       max-width: 768px;
     }
-  
+
+    .page-header {
+      border-bottom: 1px solid #e7e9fc;
+      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+    .header-menu {
+      display: flex;
+      gap: 40px;
+    }
     .open-menu-btn {
       display: none;
     }
-  
-    .logo {
-      margin-right: 120px;
-    }
-  
+    
     .header-menu {
       display: flex;
       gap: 40px;
@@ -160,6 +175,7 @@
     }
   
     .address {
+      margin: auto;
       display: block;
     }
   
@@ -175,6 +191,7 @@
       line-height: 1.16;
       letter-spacing: 0.02em;
       transition: color cubic-bezier(0.4, 0, 0.2, 1);
+      
     }
   
     .contacts:hover,
@@ -182,7 +199,6 @@
       color: #404bbf;
     }
   }
-
 
   /* pc version */
 
@@ -212,4 +228,29 @@
     }
   }
   
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .sec-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    margin-top: 0;
+  }
  
